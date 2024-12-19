@@ -1,0 +1,48 @@
+.section4 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 21%;
+
+}
+
+.section4 h2 {
+
+    margin-bottom: 52px;
+}
+
+.section4 .imgContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.section4 img {
+    border-radius: 10px;
+    width: 21%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .section4 img {
+
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section4 img {
+        width: 39%;
+    }
+    .section4 .imgContainer {
+        gap: 34px;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .section4 img {
+        width: 75%;
+    }
+}

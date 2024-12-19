@@ -1,0 +1,461 @@
+/*  Z INDEX */
+/*  5 : links */
+/*  3 : elipses */
+:root {
+    /* TO UNCOMMENT TO SEE ANMATIONS*/
+    --bienvenu-text-time: 3.5s;
+    --bienvenu-text-time-latence: 0.5s;
+    --columns-animation: 5s;
+    --link-text-appear: 5.5s;
+    --text-appear-time: 7.3s;
+
+    --overflowing: 8s;
+
+    /* TO UNCOMMENT WHEN STOP ANIMATION*/
+    /*--bienvenu-text-time: 0s;
+    --bienvenu-text-time-latence: 0.0s;
+    --columns-animation: 0s;
+    --link-text-appear: 0s;
+    --text-appear-time: 0s;
+    --overflowing: 0s;*/
+
+
+    --speed-of-animation-span: 0.4s;
+}
+
+body {
+    animation: overflowing var(--overflowing) linear;
+}
+
+.section1 {
+    z-index: -2;
+
+    width: 100%;
+    height: 98vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+
+}
+
+@keyframes overflowing {
+    0% {
+        overflow-y: hidden;
+    }
+    100% {
+        overflow-y: hidden;
+    }
+}
+
+
+.bienvenue {
+    text-align: center;
+    width: fit-content;
+    clip-path: border-box;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    opacity: 0;
+    transform: translateY(-50%);
+    -webkit-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+    -o-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+    animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
+}
+
+@keyframes bienvenue {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    40% {
+        width: 33%;
+    }
+    70% {
+
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/*=======================  TITLES ANIMATIONS     ==============*/
+
+.section1 .titles {
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    clip-path: border-box;
+
+    position: absolute;
+    top: 38%;
+
+    -webkit-animation: titles var(--text-appear-time) linear;
+    -o-animation: titles var(--text-appear-time) linear;
+    animation: titles var(--text-appear-time) linear;
+}
+
+.section1 h1 {
+    text-align: center;
+}
+
+.section1 h2 {
+    font-size: 78px;
+}
+
+@keyframes titles {
+    0% {
+        height: 0%;
+    }
+
+    90% {
+        height: 0%;
+    }
+    100% {
+        height: 30%;
+    }
+}
+
+/*=======================  COLUMNS IN BACKGROUND     ==============*/
+
+.section1 .columns {
+
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: 105%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    clip-path: border-box;
+
+    filter: drop-shadow(-4px 0px 32px rgba(0, 0, 0, 0.025)) drop-shadow(4px 0px 32px rgba(0, 0, 0, 0.040));
+
+    -webkit-animation: columns var(--columns-animation) linear;
+    -o-animation: columns var(--columns-animation) linear;
+    animation: columns var(--columns-animation) linear;
+}
+
+.section1 .columns .column {
+    height: 100%;
+    width: 15%;
+
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+    padding-block: 3% 5.5%;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.section1 .columns .column .link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .animatedSpan {
+    clip-path: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 16px;
+    cursor: pointer;
+}
+
+.section1 .columns .column .animatedSpan span {
+    display: flex;
+    transform: translateY(-14px);
+    transition: transform var(--speed-of-animation-span) linear;
+    /* 0- (-38)*/
+
+}
+
+
+.section1 .columns .column .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: start;
+
+    z-index: 5;
+
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .mailAndLinkedin {
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    align-self: start;
+
+    gap: 24px;
+    cursor: pointer;
+
+    z-index: 5;
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+}
+
+.section1 .columns .column .mailAndLinkedin div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.section1 .columns .whiteBlur1, .section1 .columns .whiteBlur2 {
+    width: 150%;
+    height: 27%;
+
+    background: var(--white);
+
+    border-radius: 50%;
+
+    position: absolute;
+    left: 0;
+    z-index: 3;
+
+    filter: blur(50px);
+}
+
+.section1 .columns .whiteBlur1 {
+    top: 0;
+    transform: translateY(-50%) translateX(-25%);
+}
+
+.section1 .columns .whiteBlur2 {
+    bottom: 0;
+    transform: translateY(50%) translateX(-25%);
+}
+
+@keyframes columns {
+    0% {
+        height: 0%;
+    }
+    70% {
+        height: 0%;
+    }
+    100% {
+        height: 105%;
+    }
+}
+
+@keyframes linkOpacity {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/*=======================  ELPISES IN BACKGROUND     ==============*/
+.section1 .elipse1 {
+    background: #FFFDF7;
+    border-radius: 50%;
+    height: 80%;
+    width: 21%;
+
+    filter: blur(250px);
+
+    position: absolute;
+    left: -5%;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.section1 .elipse2 {
+    background: #FFFDF7;
+
+    border-radius: 50%;
+
+    height: 100%;
+    width: 10%;
+
+    filter: blur(80px);
+
+    position: absolute;
+    right: -27%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+
+.section1 .elipse3 {
+    background: #5623FC;
+
+    border-radius: 50%;
+
+    height: 45%;
+    width: 45vmin;
+
+    filter: blur(290px);
+
+    position: absolute;
+    right: -37%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+.section1 .elipse4 {
+    background: #F5CB71;
+    border-radius: 50%;
+    height: 80%;
+    width: 80vmin;
+
+    filter: blur(250px);
+
+    position: absolute;
+    left: -15%;
+    top: 60%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+/*========================NAVBAR ==================*/
+
+.navbarResponsive {
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    top: 4%;
+    width: 54%;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+.navbarResponsiveOpen {
+    display: none;
+    flex-direction: column;
+    background: bisque;
+    height: 103vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 19;
+
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.navbarResponsiveOpen {
+text-decoration: underline;
+}
+/*========================RESPONSIF ==================*/
+@media only screen and (max-width: 900px) {
+    .section1 h2 {
+        font-size: 55px;
+    }
+
+    .bienvenue {
+
+        left: 24%;
+    }
+
+    .section1 {
+        margin-bottom: 21%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .section1 {
+        margin-bottom: 21%;
+    }
+
+    .section1 h2 {
+        font-size: 44px;
+    }
+
+    .bienvenue {
+        left: 28%;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .bienvenue {
+        left: 24%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .section1 .columns .column .logo {
+        display: none;
+    }
+
+    .section1 .columns .column .mailAndLinkedin {
+        display: none
+    }
+
+    .section1 .columns .column .link {
+        display: none;
+    }
+
+
+    .bienvenue {
+        left: 20%;
+    }
+
+    .section1 h2 {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bienvenue {
+        left: 14%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bienvenue {
+        left: 11%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .bienvenue {
+        left: 8%;
+    }
+}

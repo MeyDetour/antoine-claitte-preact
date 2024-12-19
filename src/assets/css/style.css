@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: "camptonBook";
+    src: url("../src/assets/campton/CamptonBook.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --white: #FFFDF7;
+    --text: #3B364F;
+    --titre: #09021B;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    z-index: -3;
+
+    overflow-x: hidden;
+
+    font-family: "camptonBook", "Nunito", sans-serif;
+
+    background: var(--white);
+
+    height: fit-content;
+    width: 100%;
+
+    font-size: 16px;
+    color: var(--text);
+
+    margin: 0;
+    padding: 0;
+    padding-inline: 4%;
+    padding-bottom: 36px;
+
+    box-sizing: border-box;
+
+}
+
+.template {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Homepage.png");
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    z-index: 50;
+    opacity: 51%;
+}
+
+h1 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 98px;
+    color: var(--titre);
+    margin: 0;
+}
+
+h2 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+
+    color: var(--titre);
+
+    margin: 0;
+
+    margin-bottom: 20px;
+
+}
+
+h3 {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+
+    color: var(--titre);
+    margin: 0;
+
+}
+
+h4 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+    color: var(--titre);
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+/*=======================    BUTTON     ==============*/
+.blackButton {
+    border: 1px solid black;
+    padding: 16px 19px;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    h1 {
+        font-size: 83px;
+    }
+
+    h2 {
+        font-size: 68px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 64px;
+    }
+    .section1{
+
+        margin-bottom: 21%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+@media only screen and (max-width: 560px) {
+
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 33px;
+    }
+
+}@media only screen and (max-width: 420px) {
+
+
+    h2 {
+        font-size: 40px;
+    }
+
+
+
+.blackButton{
+    padding: 10px 11px;
+}
+}@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 52px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    body{
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+
+}@media only screen and (max-width: 230px) {
+
+    h2 {
+        font-size: 20px;
+    }
+
+}

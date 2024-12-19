@@ -1,0 +1,134 @@
+.section3 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 17%;
+}
+
+.section3 h2 {
+
+    letter-spacing: -2px;
+
+    margin-bottom: -10px;
+
+}
+
+.section3 > p {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 84px;
+}
+
+.section3 .line
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100% ;
+    margin-bottom: 16px;
+}
+
+.section3 .line [class^= "head"] {
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(252, 249, 247, 0.5);
+
+    border-radius: 18px;
+    padding: 28px 96px;
+
+    position: relative;
+
+    gap: 7px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.section3 .line [class^= "bodyContent"] {
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 18px;
+
+    position: relative;
+
+    width: 100%;
+}
+
+.section3 .line [class^= "head"] h4 {
+    text-wrap: nowrap;
+}
+
+.section3 .line .column {
+    text-align: center;
+    width: 28%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.section3 .line .elipse {
+    border-radius: 387px;
+    background: rgba(86, 35, 252, 0.16);
+    filter: blur(100px);
+
+    flex-shrink: 0;
+    position: absolute;
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 86%;
+
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .section3 .line{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .section3 .line .column {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .section3 > p {
+        width: 80%;
+        margin-bottom: 55px;}
+    .section3 .line .column {
+        gap: 6px;
+
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section3 .line .column {
+        width: 95%;
+    }
+.section3 >p{
+    margin-bottom: 55px;
+}
+}@media only screen and (max-width: 250px) {
+    .section3 >p {
+        margin-bottom: 11px;
+    }
+}

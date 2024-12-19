@@ -1,0 +1,183 @@
+.section2 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.section2 h2 {
+    margin-bottom: 40px;
+
+    letter-spacing: -4px;
+}
+
+.section2 .line {
+
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin-bottom: 48px;
+
+
+}
+
+.section2 .line > img {
+    width: 33%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section2 .line > div {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.section2 .line [class^="bloc"] {
+    background: rgba(252, 249, 247, 0.70);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 86%;
+    height: fit-content;
+
+
+    box-sizing: border-box;
+    border-radius: 18px;
+
+    padding: 7% 8%;
+
+
+}
+
+.section2 .line .bloc1 {
+    padding-block: 62px;
+}
+
+.section2 .line .bloc1 p {
+    text-align: left;
+}
+
+.section2 .line .bloc1 p, .section2 .line .bloc3 p, .section2 .line .bloc4 p {
+    font-size: 24px;
+    position: relative;
+}
+
+.section2 .line .bloc1 p:after {
+    content: "";
+
+    position: absolute;
+    bottom: -8px;
+    left: 0%;
+
+    width: 100%;
+    background: #A172F9;
+    height: 2px;
+}
+
+.section2 .elipse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    z-index: -1;
+
+    width: 490px;
+    height: 451px;
+    flex-shrink: 0;
+    border-radius: 490px;
+    background: rgba(86, 35, 252, 0.60);
+    filter: blur(350px);
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .section2 .line .bloc1 p, .section2 .line .bloc3 p, .section2 .line .bloc4 p {
+        font-size: 21px;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .section3 .line1 [class^= "head"], .section3 .line2 [class^= "bodyContent"] {
+        width: 32%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .section2 .line {
+        flex-direction: column;
+    }
+    .section2{
+
+        margin-bottom: 21%;
+    }
+
+    .section2 .line > div {
+        width: 77%;
+    }
+    .section2 .line > div:last-child {
+    align-items: center;
+    }
+    .section2 .line > div:first-child {
+      flex-direction: row;
+justify-content: space-around;
+        align-items: stretch;
+        margin-bottom: 72px;
+        flex-wrap: wrap;
+    }
+
+    .section2 .line .bloc5,  .section2 .line .bloc1,  .section2 .line .bloc2{
+        width: 100%;
+    }
+    .section2 .line .bloc3 , .section2 .line .bloc4{
+        width: 45% !important;
+    }
+
+    .section2 .line > img {
+        width: 50%;
+        margin-bottom: 72px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .section2 .line .bloc1 p, .section2 .line .bloc3 p, .section2 .line .bloc4 p {
+        font-size: 16px;
+    }
+
+
+.section2 .line [class^="bloc"]{
+    padding: 4%;
+}
+
+}
+@media only screen and (max-width: 450px) {
+    .section2 .line > div {
+        width: 95%;
+        gap: 13px;
+        justify-content: space-around;
+    }
+    .section2 .line > img {
+        width: 86%;}
+    .section2 {
+        margin-bottom: 40%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .section2 .line .bloc1 p, .section2 .line .bloc3 p, .section2 .line .bloc4 p {
+        font-size: 14px;
+    }
+}
