@@ -73,10 +73,10 @@ export default function HomeSection1() {
                 <div className="whiteBlur2"/>
             </div>
 
-            <div className="elipse1"/>
-            <div className="elipse2"/>
-            <div className="elipse3"/>
-            <div className="elipse4"/>
+            <div className="elipse1" />
+            <div className="elipse2" />
+            <div className="elipse3" />
+            <div className="elipse4" />
             <div className="titles">
                 <h1>Antoine Claitte</h1>
                 <h2>Web Designer</h2>

@@ -289,14 +289,14 @@ body {
 .section1 .elipse1 {
     background: #FFFDF7;
     border-radius: 50%;
-    height: 80%;
+    height: 50%;
     width: 21%;
 
     filter: blur(250px);
 
     position: absolute;
     left: -5%;
-    top: 60%;
+    top: 40%;
     transform: translateX(-50%) translateY(-50%);
 
 }
@@ -339,14 +339,14 @@ body {
 .section1 .elipse4 {
     background: #F5CB71;
     border-radius: 50%;
-    height: 80%;
+    height: 56%;
     width: 80vmin;
 
     filter: blur(250px);
 
     position: absolute;
     left: -15%;
-    top: 60%;
+    top: 48%;
     transform: translateX(-50%) translateY(-50%);
 
 }
@@ -432,7 +432,10 @@ text-decoration: underline;
         display: none;
     }
 
+.section1 .columns{
 
+    width: 203%;
+}
     .bienvenue {
         left: 20%;
     }

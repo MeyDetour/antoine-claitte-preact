@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 section3.style.display = "flex"
                 footer.style.display = "flex"
                 section4.style.display = "flex"
-                navbarBurger.style.display = "flex"
                 section1.style.marginBottom = "11%"
+
+                if (window.innerWidth <= 570){
+                    navbarBurger.style.display = "flex"
+                }
             }, 8000)
 
         } else {
@@ -29,8 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
             section3.style.display = "flex"
             section4.style.display = "flex"
             footer.style.display = "flex"
-            navbarBurger.style.display = "flex"
             section1.style.marginBottom = "11%"
+            if (window.innerWidth <= 570){
+                navbarBurger.style.display = "flex"
+            }
         }
     }
 
