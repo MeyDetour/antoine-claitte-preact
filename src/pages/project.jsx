@@ -1,7 +1,7 @@
 
 import projectData from "../data.jsx";
 import {NotFound} from "./_404.jsx";
-import NavbarResponsif from "../components/navbar.js";
+import {scrollToDiv} from "../index.jsx";
 
 export function Project({name}) {
 
@@ -26,10 +26,30 @@ export function Project({name}) {
 
 
     return (
-        <>
+        <>  <div className="elipse" />
+
             <div className="oneProjectSection">
 
-                <NavbarResponsif></NavbarResponsif>
+                <div className="navbarResponsive">
+
+                    <div className="link" onClick={() => {
+                        navigateToHome()
+                    }}><span>[01]</span>
+                        <span>A propos</span>
+                    </div>
+
+                    <div className="link" onClick={() => {
+                        navigateToHome()
+                    }}><span>[02]</span>
+                        <span>Projets</span>
+                    </div>
+                    <div className="link"  onClick={() => {
+                        navigateToHome()
+                    }}><span>[03]</span>
+                        <span>Contact</span>
+                    </div>
+
+                </div>
                 <div className="columns">
                     <div className="column">
                         <div className="logo"><span>Antoine Claitte</span></div>
@@ -64,8 +84,7 @@ export function Project({name}) {
                             </div>
                         </div>
                     </div>
-                    <div className="elipse" />
-                </div>
+                    </div>
 
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
@@ -77,9 +96,12 @@ export function Project({name}) {
                     </svg>
                 </a>
 
-                {project.images.map((image, index) => (
-                    <img key={index} src={image} alt="" />
-                ))}
+                <div className={"imageContainer"}>
+                    {project.images.map((image, index) => (
+                        <img key={index} src={"../"+image} alt="" />
+                    ))}
+                </div>
+
             </div>
 
         </>

@@ -7,9 +7,9 @@
 }
 
 .section4 h2 {
-
     margin-bottom: 52px;
 }
+
 
 .section4 .imgContainer {
     display: flex;
@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
+    cursor: pointer;
 }
 
 .section4 img {

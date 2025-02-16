@@ -357,13 +357,18 @@ body {
     display: none;
     flex-direction: row;
     position: absolute;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     top: 4%;
-    width: 54%;
+    width: 84%;
     justify-content: space-between;
     z-index: 20;
 }
-
+.navbarResponsive .link{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
 .navbarResponsiveOpen {
     display: none;
     flex-direction: column;
@@ -378,9 +383,11 @@ body {
     gap: 50px;
 
 }
+
 .navbarResponsiveOpen {
-text-decoration: underline;
+    text-decoration: underline;
 }
+
 /*========================RESPONSIF ==================*/
 @media only screen and (max-width: 900px) {
     .section1 h2 {
@@ -431,11 +438,14 @@ text-decoration: underline;
     .section1 .columns .column .link {
         display: none;
     }
-
-.section1 .columns{
-
-    width: 203%;
+.navbarResponsive{
+    display: flex;
 }
+    .section1 .columns {
+
+        width: 203%;
+    }
+
     .bienvenue {
         left: 20%;
     }
@@ -460,5 +470,9 @@ text-decoration: underline;
 @media only screen and (max-width: 350px) {
     .bienvenue {
         left: 8%;
+    }
+    .navbarResponsive{
+
+        width: 100%;
     }
 }

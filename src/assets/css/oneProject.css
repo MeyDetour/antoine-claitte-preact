@@ -1,7 +1,7 @@
-.oneProjectSection{
+.oneProjectSection {
     z-index: -2;
 
-position: relative;
+    position: relative;
     width: 100%;
 
     display: flex;
@@ -9,7 +9,11 @@ position: relative;
     align-items: center;
     justify-content: center;
 
-    min-height: 100vh;
+    min-height: 90vh;
+
+    gap: 32px;
+    padding-top: 11vh;
+    overflow-y: hidden;
 }
 
 
@@ -83,27 +87,89 @@ position: relative;
     z-index: 5;
 
 }
-.oneProjectSection .columns .elipse{
-    background: #5623fc9e;
+  .elipse {
+
+    background: #5623fc69;
     width: 50%;
     height: 50%;
     border-radius: 50%;
     filter: blur(290px);
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: -9%;
+      z-index: -2;
 }
-.oneProjectSection .blackButton{
-    border :0 ;
+
+.oneProjectSection > h2 {
+    margin: 0;
+    text-align: center;
 }
+
+.oneProjectSection > p {
+    margin: 0;
+    width: 38%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.oneProjectSection > .blackButton {
+    margin-bottom: 10px;
+}
+
+.oneProjectSection > .imageContainer {
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.oneProjectSection > .imageContainer > img {
+    width: 30%;
+    object-fit: contain;
+}
+
+.oneProjectSection > .imageContainer > img:not(:nth-child(2)) {
+    margin-top: -100px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .oneProjectSection > p {
+        width: 69%;
+
+    }
+.oneProjectSection{
+    padding-top: 20vh;}
+    .oneProjectSection > .imageContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .oneProjectSection > .imageContainer > img:not(:nth-child(2)) {
+        margin-top: 0px;
+    }
+
+    .oneProjectSection > .imageContainer > img {
+        width: 59%;
+    }
+}
+
 @media only screen and (max-width: 570px) {
 
+    .oneProjectSection > p {
+        width: 100%;
 
-.oneProjectSection .columns .column .logo {
+    }
+
+    .oneProjectSection > .imageContainer > img {
+        width: 100%;
+    }
+
+    .oneProjectSection .columns .column .logo {
         display: none;
     }
 
-.oneProjectSection .columns .column .link {
+    .oneProjectSection .columns .column .link {
         display: none;
     }
 
