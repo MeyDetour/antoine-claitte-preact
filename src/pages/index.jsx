@@ -5,7 +5,6 @@ import About from "../components/About.jsx";
 import Webdesign from "../components/Webdesign.jsx";
 import ProjectsSection from "../components/Projects.jsx";
 import Footer from "../components/Footer.jsx";
-import "../assets/main.js";
 export function Home() {
 
 	return (

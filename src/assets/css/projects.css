@@ -18,6 +18,7 @@
     justify-content: center;
     gap: 60px;
     cursor: pointer;
+    width: 100%;
 }
 
 .section4 img {

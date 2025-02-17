@@ -1,5 +1,6 @@
 import '../assets/css/footer.css'
 export default function Footer(){
+    console.log("Footer rendered")
     return (
 
         <div className="footer">

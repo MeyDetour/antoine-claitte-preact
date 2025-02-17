@@ -1,30 +1,39 @@
 let animation = true
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log(animation)
     let section2 = document.querySelector(".section2")
     let section1 = document.querySelector(".section1")
+    let section1WhiteBlur2 = document.querySelector(".section1 .whiteBlur2")
     let section3 = document.querySelector(".section3")
     let section4 = document.querySelector(".section4")
     let navbarBurger = document.querySelector(".navbarResponsive")
     let footer = document.querySelector(".footer")
+    let body = document.querySelector("body")
 
-    if (section1 && section3 && section2 && section4 && footer){
-        if (animation ) {
+    console.log(section1, section1WhiteBlur2, section2, section3, section4, footer)
+    if (section1 && section3 && section2 && section4 && footer) {
+        if (animation) {
             window.addEventListener("beforeunload", () => {
                 section1.style.marginBottom = "0%"
             });
-
+            console.log("start timeout")
 
             setTimeout(() => {
+                console.log("end of timeout")
                 section2.style.display = "flex"
                 section3.style.display = "flex"
                 footer.style.display = "flex"
                 section4.style.display = "flex"
+                section1WhiteBlur2.style.display = "flex"
                 section1.style.marginBottom = "11%"
-
-                if (window.innerWidth <= 570){
+                body.style.overflowY = "auto    "
+                body.style.paddingBottom = ' 36px';
+                if (window.innerWidth <= 570) {
                     navbarBurger.style.display = "flex"
                 }
+                animation = false
+                console.log(animation)
             }, 8000)
 
         } else {
@@ -33,61 +42,58 @@ document.addEventListener('DOMContentLoaded', () => {
             section4.style.display = "flex"
             footer.style.display = "flex"
             section1.style.marginBottom = "11%"
-            if (window.innerWidth <= 570){
+            if (window.innerWidth <= 570) {
                 navbarBurger.style.display = "flex"
             }
         }
     }
 
 
-
-
-})
-
-
-let links = document.querySelectorAll('.animatedSpan')
-links.forEach((link) => {
-    let isAnimating = false;
-    console.log(link)
-    link.addEventListener('mouseover', function (e) {
-
-        if (isAnimating) return; // Si une animation est en cours, ignorer l'événement
-        isAnimating = true;
-        // Get the target
+    let links = document.querySelectorAll('.animatedSpan')
+    links.forEach((link) => {
+        let isAnimating = false;
         console.log(link)
-        const target = e.target;
+        link.addEventListener('mouseover', function (e) {
 
-
-        // Get the bounding rectangle of target
-        const rect = target.getBoundingClientRect();
-
-        const y = e.clientY - rect.top;
-
-        // Vérifier si l'entrée vient du haut ou du bas
-        if (y < rect.height / 2) {
-            console.log("Entier par le haut")
-
+            if (isAnimating) return; // Si une animation est en cours, ignorer l'événement
             isAnimating = true;
-            link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(-30px)"
-            })
-        } else {
-
-            isAnimating = true;
-            console.log("Entier par le bas")
-            link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(3px)"
-            })
-        }
+            // Get the target
+            console.log(link)
+            const target = e.target;
 
 
-    });
+            // Get the bounding rectangle of target
+            const rect = target.getBoundingClientRect();
 
-    link.addEventListener('mouseout', function () {
-        link.querySelectorAll('span').forEach((span) => {
-            span.style.transform = "translateY(-14px)"; // Retour à l'état initial
+            const y = e.clientY - rect.top;
+
+            // Vérifier si l'entrée vient du haut ou du bas
+            if (y < rect.height / 2) {
+                console.log("Entier par le haut")
+
+                isAnimating = true;
+                link.querySelectorAll('span').forEach((span) => {
+                    span.style.transform = "translateY(-30px)"
+                })
+            } else {
+
+                isAnimating = true;
+                console.log("Entier par le bas")
+                link.querySelectorAll('span').forEach((span) => {
+                    span.style.transform = "translateY(3px)"
+                })
+            }
+
+
         });
-        isAnimating = false;
-    });
-})
 
+        link.addEventListener('mouseout', function () {
+            link.querySelectorAll('span').forEach((span) => {
+                span.style.transform = "translateY(-14px)"; // Retour à l'état initial
+            });
+            isAnimating = false;
+        });
+    })
+
+
+})

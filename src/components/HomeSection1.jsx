@@ -2,7 +2,6 @@ import '../assets/css/home.css'
 import {scrollToDiv} from "../index.jsx";
 import "../assets/css/oneProject.css"
 
-
 export default function HomeSection1() {
 
 
