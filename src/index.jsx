@@ -5,6 +5,7 @@ import { Home } from './pages/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 import {Project} from "./pages/project.jsx";
+import {Mentionslegales} from "./pages/mentionslegales.jsx";
 export function scrollToDiv(route) {
 	const element = document.querySelector(`${route}`);
 
@@ -22,6 +23,7 @@ export function App() {
 
 				<Router>
 					<Route path="/" component={Home} />
+					<Route path="/mentionslegales" component={Mentionslegales} />
 					<Project path="/project/:name" />
 					<Route default component={NotFound} />
 				</Router>

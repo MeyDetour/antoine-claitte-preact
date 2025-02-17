@@ -39,7 +39,7 @@ export default function Footer(){
                 </div>
 
             </div>
-            <span className="mentions">..Réservé tout droit d'auteur..</span>
+            <a href={"/mentionslegales"} className="mentions">..Mention légales..</a>
             <div className="elipse"></div>
         </div>
     )

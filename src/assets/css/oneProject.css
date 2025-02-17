@@ -1,4 +1,4 @@
-.oneProjectSection {
+.oneProjectSection, .mentionslegales {
     z-index: -2;
 
     position: relative;
@@ -17,7 +17,7 @@
 }
 
 
-.oneProjectSection .columns {
+.oneProjectSection .columns,.mentionslegales .columns {
 
     z-index: -1;
 
@@ -35,7 +35,7 @@
 
 }
 
-.oneProjectSection .columns .column {
+.oneProjectSection .columns .column,.mentionslegales .columns .column {
     height: 100%;
     width: 15%;
 
@@ -52,7 +52,7 @@
     text-transform: uppercase;
 }
 
-.oneProjectSection .columns .column .link {
+.oneProjectSection .columns .column .link ,.mentionslegales .columns .column .link {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -61,7 +61,8 @@
 
 }
 
-.oneProjectSection .columns .column .animatedSpan {
+.oneProjectSection .columns .column .animatedSpan ,
+.mentionslegales .columns .column .animatedSpan {
     clip-path: border-box;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@
     cursor: pointer;
 }
 
-.oneProjectSection .columns .column .animatedSpan span {
+.oneProjectSection .columns .column .animatedSpan span ,.mentionslegales .columns .column .animatedSpan span {
     display: flex;
     transform: translateY(-14px);
     transition: transform var(--speed-of-animation-span) linear;
@@ -78,7 +79,8 @@
 }
 
 
-.oneProjectSection .columns .column .logo {
+.oneProjectSection .columns .column .logo ,
+.mentionslegales .columns .column .logo {
     display: flex;
     flex-direction: column;
     align-items: start;
