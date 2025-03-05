@@ -195,7 +195,7 @@ body {
 
 .section1 .columns .column .animatedSpan > div{
     transform: translateY(-13px);
-    transition: transform var(--speed-of-animation-span) linear;
+    transition: transform var(--speed-of-animation-span) linear;will-change: transfor
 }
 .section1 .columns .column .animatedSpan span {
     display: flex;
