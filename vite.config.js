@@ -13,5 +13,7 @@ export default defineConfig({
 				previewMiddlewareFallback: '/404',
 			},
 		}),
-	],
+	],build: {
+		cssCodeSplit: false,
+	},
 });
