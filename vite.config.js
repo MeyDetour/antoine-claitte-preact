@@ -7,7 +7,7 @@ export default defineConfig({
 		preact({
 			prerender: {
 				enabled: true,
-				renderTarget: '#app',
+				renderTarget: 'body',
 				additionalPrerenderRoutes: ['/404'],
 				previewMiddlewareEnabled: true,
 				previewMiddlewareFallback: '/404',
