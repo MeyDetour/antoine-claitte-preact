@@ -194,7 +194,7 @@ body {
 
 .section1 .columns .column .animatedSpan span {
     display: flex;
-    transform: translateY(-20px);
+    transform: translateY(-14px);
     transition: transform var(--speed-of-animation-span) linear;
     /* 0- (-38)*/
 
