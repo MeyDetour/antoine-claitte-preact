@@ -73,14 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 isAnimating = true;
                 link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(-30px)"
+                    span.style.transform = "translateY(-34px)"
                 })
             } else {
 
                 isAnimating = true;
                 console.log("Entier par le bas")
                 link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(3px)"
+                    span.style.transform = "translateY(-1px)"
                 })
             }
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         link.addEventListener('mouseout', function () {
             link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(-14px)"; // Retour à l'état initial
+                span.style.transform = "translateY(-20px)"; // Retour à l'état initial
             });
             isAnimating = false;
         });
