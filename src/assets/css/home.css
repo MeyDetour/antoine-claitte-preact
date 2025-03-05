@@ -199,6 +199,7 @@ body {
 }
 .section1 .columns .column .animatedSpan span {
     display: flex;
+    line-height: 16px;
 
 
 }
