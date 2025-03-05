@@ -72,25 +72,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("Entier par le haut")
 
                 isAnimating = true;
-                link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(-30px)"
-                })
+                let div = link.querySelector('div')
+                div.style.transform = "translateY(-29px)"
+
             } else {
 
                 isAnimating = true;
                 console.log("Entier par le bas")
-                link.querySelectorAll('span').forEach((span) => {
-                    span.style.transform = "translateY(3px)"
-                })
+                let div = link.querySelector('div')
+                div.style.transform = "translateY(3px)"
+
             }
 
 
         });
 
         link.addEventListener('mouseout', function () {
-            link.querySelectorAll('span').forEach((span) => {
-                span.style.transform = "translateY(-14px)"; // Retour à l'état initial
-            });
+         let div=    link.querySelector('div')
+                div.style.transform = "translateY(-13px)"; // Retour à l'état initial
+
             isAnimating = false;
         });
     })

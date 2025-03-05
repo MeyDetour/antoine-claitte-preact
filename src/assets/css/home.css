@@ -174,9 +174,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
+    justify-content: center;
 
     cursor: pointer;
-
+    height: 37px;
     z-index: 5;
 
     -webkit-animation: linkOpacity var(--link-text-appear) linear;
@@ -192,11 +193,13 @@ body {
     cursor: pointer;
 }
 
+.section1 .columns .column .animatedSpan > div{
+    transform: translateY(-13px);
+    transition: transform var(--speed-of-animation-span) linear;
+}
 .section1 .columns .column .animatedSpan span {
     display: flex;
-    transform: translateY(-14px);
-    transition: transform var(--speed-of-animation-span) linear;
-    /* 0- (-38)*/
+
 
 }
 

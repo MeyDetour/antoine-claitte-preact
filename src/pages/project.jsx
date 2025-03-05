@@ -60,27 +60,36 @@ export function Project({name}) {
                     <div className="column">
                         <div className="link" onClick={navigateToHome}><span>[01]</span>
                             <div className="animatedSpan">
-                                <span>A propos</span>
-                                <span>A propos</span>
-                                <span>A propos</span>
+                                <div>
+                                    <span>A propos</span>
+                                    <span>A propos</span>
+                                    <span>A propos</span>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div className="column">
                         <div className="link" onClick={navigateToHome}><span>[02]</span>
                             <div className="animatedSpan">
-                                <span>Projets</span>
-                                <span>Projets</span>
-                                <span>Projets</span>
+                             <div>
+                                 <span>Projets</span>
+                                 <span>Projets</span>
+                                 <span>Projets</span>
+                             </div>
+
                             </div>
                         </div>
                     </div>
                     <div className="column" onClick={navigateToHome}>
                         <div className="link"><span>[03]</span>
                             <div className="animatedSpan">
+                            <div>
                                 <span>Contact</span>
                                 <span>Contact</span>
                                 <span>Contact</span>
+                            </div>
+
                             </div>
                         </div>
                     </div>
