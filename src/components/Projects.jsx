@@ -1,13 +1,10 @@
 
 import '../assets/css/projects.css'
 import projectData from "../data.jsx";
+import {Link} from "react-router";
 export default function ProjectsSection() {
-    console.log("Section4 rendered")
-    function navigateTo(link) {
-        console.log("navigate to ", link);
-       return window.location.href = `/project/${link}`;
-    }
 
+    console.log("load section 4")
     let projects = projectData()
     console.log(projects);
     return (
@@ -15,7 +12,9 @@ export default function ProjectsSection() {
             <h2>MES PROJETS</h2>
             <div className="imgContainer">
                 {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
+                    <Link to={`/projects/${item.uniqueName}`} key={i}>
+                        <img key={i} src={item.image}  alt="" />
+                    </Link>
                 ))}
             </div>
 
