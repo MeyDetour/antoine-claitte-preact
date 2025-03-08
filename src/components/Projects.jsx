@@ -6,7 +6,7 @@ export default function ProjectsSection() {
     console.log("Section4 rendered")
     function navigateTo(link) {
         console.log("navigate to ", link);
-       return  router.add(`/project/${link}`);
+       return  router.route(`/project/${link}`);
     }
 
     let projects = projectData()
@@ -16,16 +16,6 @@ export default function ProjectsSection() {
             <h2>MES PROJETS</h2>
             <div className="imgContainer">
                 {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
-                ))}  {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
-                ))}  {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
-                ))}  {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
-                ))}  {projects.map((item, i) => (
-                    <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
-                ))}  {projects.map((item, i) => (
                     <img key={i} src={item.image} onClick={()=>{navigateTo(item.uniqueName)}} alt="" />
                 ))}
             </div>
