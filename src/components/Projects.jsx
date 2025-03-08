@@ -4,6 +4,7 @@ import projectData from "../data.jsx";
 export default function ProjectsSection() {
     console.log("Section4 rendered")
     function navigateTo(link) {
+        console.log("navigate to ", link);
         route(`/project/${link}`);
     }
 
