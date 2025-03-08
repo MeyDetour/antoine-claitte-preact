@@ -16,4 +16,8 @@ export default defineConfig({
 	],build: {
 		cssCodeSplit: false,
 	},
+	server: {
+		historyApiFallback: true,
+	},
 });
+
