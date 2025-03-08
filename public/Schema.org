@@ -1,0 +1,12 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Antoine Claitte",
+  "jobTitle": "Web designer",
+  "url": "https://antoineclaitte.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/antoine-claitte-a14a06245/"
+  ]
+}
+</script>

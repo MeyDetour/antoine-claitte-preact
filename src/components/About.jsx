@@ -50,7 +50,7 @@ export default function About() {
 
                 </div>
 
-                <img src="/images/antoineclaitte.png" alt="Antoine Claitte image"/>
+                <img src="/images/antoineclaitte.png" alt="Antoine Claitte est un web designer freelance spécialisé dans la conception de sites internet intuitifs et modernes avec Figma."/>
 
                 <div>
                     <div className="bloc1">
