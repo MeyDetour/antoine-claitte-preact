@@ -73,7 +73,7 @@ body {
         opacity: 1;
     }
     40% {
-        width: 33%;
+        width: fit-content;
     }
     70% {
 
