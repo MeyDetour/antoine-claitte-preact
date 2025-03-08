@@ -108,7 +108,7 @@ export function Project({name}) {
 
                 <div className={"imageContainer"}>
                     {project.images.map((image, index) => (
-                        <img key={index} src={"../"+image} alt="" />
+                        <img key={index} src={image} alt="" />
                     ))}
                 </div>
 
