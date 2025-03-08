@@ -1,6 +1,6 @@
 export default function projectData() {
 
-    const baseLink = "/images/projects/"
+    const baseLink = "/images/projects"
     return [
         {
             uniqueName: "MaisonLaborde",
