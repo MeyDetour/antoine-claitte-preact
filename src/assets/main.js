@@ -53,11 +53,25 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach((link) => {
         let isAnimating = false;
         console.log(link)
+        link.addEventListener('drag', (e) => {
+            if (isAnimating) return;
+            isAnimating = true;
+            const target = e.target;
+            isAnimating = true;
+            let div = link.querySelector('div')
+            div.style.transform = "translateY(-29px)"
+
+            setTimeout(()=>{
+                let div = link.querySelector('div')
+                div.style.transform = "translateY(-13px)";
+                isAnimating = false;
+            },2000)
+        })
+
         link.addEventListener('mouseover', function (e) {
 
-            if (isAnimating) return; // Si une animation est en cours, ignorer l'événement
+            if (isAnimating) return;
             isAnimating = true;
-            // Get the target
             console.log(link)
             const target = e.target;
 
@@ -88,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         link.addEventListener('mouseout', function () {
-         let div=    link.querySelector('div')
-                div.style.transform = "translateY(-13px)"; // Retour à l'état initial
+            let div = link.querySelector('div')
+            div.style.transform = "translateY(-13px)"; // Retour à l'état initial
 
             isAnimating = false;
         });
