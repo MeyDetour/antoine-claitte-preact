@@ -52,7 +52,7 @@ export function Project({name}) {
                 </div>
                 <div className="columns">
                     <div className="column">
-                        <div className="logo"><span>Antoine Claitte</span></div>
+                        <div className="logo"><span onClick={navigateToHome}>Antoine Claitte</span></div>
 
                     </div>
                     <div className="column" />
