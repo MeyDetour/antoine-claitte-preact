@@ -11,7 +11,7 @@ export default function ProjectsSection() {
             <h2>MES PROJETS</h2>
             <div className="imgContainer">
                 {projects.map((item, i) => (
-                    <a href={`/projects/${item.uniqueName}`} key={i}>
+                    <a href={`/project/${item.uniqueName}`} key={i}>
                         <img key={i} src={item.image}  alt="" />
                     </a>
                 ))}
