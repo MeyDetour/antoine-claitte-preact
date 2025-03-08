@@ -50,7 +50,7 @@ export default function About() {
 
                 </div>
 
-                <img src="/src/assets/images/antoineclaitte.png" alt="Antoine Claitte image"/>
+                <img src="/images/antoineclaitte.png" alt="Antoine Claitte image"/>
 
                 <div>
                     <div className="bloc1">
