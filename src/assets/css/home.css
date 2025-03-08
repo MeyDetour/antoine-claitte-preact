@@ -183,6 +183,10 @@ body {
     -webkit-animation: linkOpacity var(--link-text-appear) linear;
     -o-animation: linkOpacity var(--link-text-appear) linear;
     animation: linkOpacity var(--link-text-appear) linear;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .section1 .columns .column .animatedSpan {
