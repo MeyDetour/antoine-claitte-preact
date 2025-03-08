@@ -197,12 +197,20 @@ body {
     transform: translateY(-13px);
     transition: transform var(--speed-of-animation-span) linear;will-change: transfor
 }
+
+
 .section1 .columns .column .animatedSpan span {
     display: flex;
     line-height: 16px;
 
 
 }
+
+.section1 .columns .column .animatedSpan span{
+     -webkit-user-select: none; /* Safari */
+     -ms-user-select: none; /* IE 10 and IE 11 */
+     user-select: none; /* Standard syntax */
+ }
 
 
 .section1 .columns .column .logo {
