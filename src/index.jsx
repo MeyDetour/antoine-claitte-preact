@@ -34,8 +34,8 @@ export function App() {
 
 if (typeof window !== 'undefined') {
 	hydrate(<App />, document.querySelector('body'));
-}
-
-export async function prerender(data) {
-	return await ssr(<App {...data} />);
-}
+ }
+//
+// export async function prerender(data) {
+// 	return await ssr(<App {...data} />);
+// }
