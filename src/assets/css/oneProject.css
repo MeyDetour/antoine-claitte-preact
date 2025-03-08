@@ -169,7 +169,9 @@
 }
 
 @media only screen and (max-width: 570px) {
-
+.oneProjectSection   .navbarResponsive {
+    display: flex;
+}
     .oneProjectSection > p {
         width: 100%;
 
