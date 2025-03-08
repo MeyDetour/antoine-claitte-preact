@@ -58,6 +58,13 @@
     align-items: start;
 
     cursor: pointer;
+    height: 37px;
+    z-index: 5;
+
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
+
 
 }
 
@@ -70,14 +77,22 @@
     cursor: pointer;
 }
 
-.oneProjectSection .columns .column .animatedSpan span ,.mentionslegales .columns .column .animatedSpan span {
-    display: flex;
-    transform: translateY(-14px);
-    transition: transform var(--speed-of-animation-span) linear;
-    /* 0- (-30)*/
-
+.oneProjectSection .columns .column .animatedSpan> div ,
+.mentionslegales .columns .column .animatedSpan>div{
+    transform: translateY(-13px);
+    transition: transform var(--speed-of-animation-span) linear;will-change: transfor
 }
 
+
+
+.oneProjectSection .columns .column .animatedSpan span ,.mentionslegales .columns .column .animatedSpan span {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    display: flex;
+    line-height: 16px;
+
+}
 
 .oneProjectSection .columns .column .logo ,
 .mentionslegales .columns .column .logo {
