@@ -53,10 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach((link) => {
         let isAnimating = false;
         console.log(link)
-        link.addEventListener('drag', (e) => {
+        link.addEventListener('drag', () => {
             if (isAnimating) return;
-            isAnimating = true;
-            const target = e.target;
             isAnimating = true;
             let div = link.querySelector('div')
             div.style.transform = "translateY(-29px)"

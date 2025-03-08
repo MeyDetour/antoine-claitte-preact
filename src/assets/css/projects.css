@@ -40,7 +40,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .section4 img {
+    .section4 .imgContainer  a  {
         width: 39%;
     }
     .section4 .imgContainer {
@@ -50,7 +50,8 @@
 
 
 @media only screen and (max-width: 560px) {
-    .section4 img {
+
+    .section4 .imgContainer  a  {
         width: 75%;
     }
 }

@@ -197,9 +197,10 @@ body {
     cursor: pointer;
 }
 
-.section1 .columns .column .animatedSpan > div{
+.section1 .columns .column .animatedSpan > div {
     transform: translateY(-13px);
-    transition: transform var(--speed-of-animation-span) linear;will-change: transfor
+    transition: transform var(--speed-of-animation-span) linear;
+    will-change: transfor
 }
 
 
@@ -210,11 +211,11 @@ body {
 
 }
 
-.section1 .columns .column .animatedSpan span{
-     -webkit-user-select: none; /* Safari */
-     -ms-user-select: none; /* IE 10 and IE 11 */
-     user-select: none; /* Standard syntax */
- }
+.section1 .columns .column .animatedSpan span {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
 
 
 .section1 .columns .column .logo {
@@ -381,11 +382,13 @@ body {
     justify-content: space-between;
     z-index: 20;
 }
-.navbarResponsive .link{
+
+.navbarResponsive .link {
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items: start;
 }
+
 .navbarResponsiveOpen {
     display: none;
     flex-direction: column;
@@ -455,9 +458,11 @@ body {
     .section1 .columns .column .link {
         display: none;
     }
-.navbarResponsive{
-    display: none;
-}
+
+    .navbarResponsive {
+        display: none;
+    }
+
     .section1 .columns {
 
         width: 203%;
@@ -488,7 +493,8 @@ body {
     .bienvenue {
         left: 8%;
     }
-    .navbarResponsive{
+
+    .navbarResponsive {
 
         width: 100%;
     }
