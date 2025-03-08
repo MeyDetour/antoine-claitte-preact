@@ -1,11 +1,12 @@
-import { route } from "preact-router";
+import { useRouter} from "preact-router";
 import '../assets/css/projects.css'
 import projectData from "../data.jsx";
 export default function ProjectsSection() {
+    const router = useRouter();
     console.log("Section4 rendered")
     function navigateTo(link) {
         console.log("navigate to ", link);
-        route(`/project/${link}`);
+       return  router.add(`/project/${link}`);
     }
 
     let projects = projectData()
