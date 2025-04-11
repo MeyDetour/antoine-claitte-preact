@@ -45,9 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector(".bienvenue").classList.add("bienvenueAnimation")
 
             // animation to nav
-            document.querySelector(".section1 .columns .column .link ").classList.add("linkTextAppearAnimation")
+        document.querySelectorAll(".section1 .columns .column .link ").forEach(link=>{
+            link.classList.add("linkTextAppearAnimation")
+        })
             document.querySelector(".section1 .columns .column .logo").classList.add("logoAnimation")
-            document.querySelector(".section1 .columns .column .animatedSpan").classList.add("linkTextAppearAnimation")
              document.querySelector(".section1 .columns .column .mailAndLinkedin").classList.add("mailAndLinkedinAnimation")
 
             // animation to title
