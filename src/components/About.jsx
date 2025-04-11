@@ -1,8 +1,12 @@
 import '../assets/css/about.css'
 
 export default function About() {
+    if (typeof window !== "undefined" && window.localStorage) {
+         localStorage.setItem("animation",true);
+    } else {
+        console.log("localStorage n'est pas disponible.");
+    }
 
-    localStorage.setItem("animation",true)
     return (
 
         <div className="section2">

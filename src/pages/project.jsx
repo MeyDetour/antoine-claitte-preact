@@ -1,7 +1,6 @@
 
 import projectData from "../data.jsx";
 import {NotFound} from "./_404.jsx";
-import {scrollToDiv} from "../index.jsx";
 
 export function Project({name}) {
 
@@ -25,7 +24,11 @@ export function Project({name}) {
         window.location.href = "/";
     }
 
-    localStorage.setItem("animation",true)
+    if (typeof window !== "undefined" && window.localStorage) {
+        localStorage.setItem("animation",true);
+    } else {
+        console.log("localStorage n'est pas disponible.");
+    }
 
 
     return (
