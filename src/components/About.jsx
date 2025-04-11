@@ -1,6 +1,8 @@
 import '../assets/css/about.css'
 
 export default function About() {
+
+    localStorage.setItem("animation",true)
     return (
 
         <div className="section2">
@@ -67,7 +69,7 @@ export default function About() {
                 </div>
             </div>
 
-            <a download href="../assets/antoine_claitte_CV.pdf" className="blackButton">
+            <a  href="/Antoine_claitte_CV.pdf" download   target="_blank" rel="noopener"  className="blackButton ">
                 <span> Télécharger mon CV </span>
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.65625 12.6264L12.6258 1.65682M12.6258 1.65682L12.625 12.4998M12.6258 1.65682H1.31211"

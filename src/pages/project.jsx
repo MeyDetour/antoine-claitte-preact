@@ -25,6 +25,8 @@ export function Project({name}) {
         window.location.href = "/";
     }
 
+    localStorage.setItem("animation",true)
+
 
     return (
         <>  <div className="elipse" />
