@@ -20,7 +20,7 @@
     --overflowing: 0s;*/
 
 
-    --speed-of-animation-span: 0.4s;
+    --speed-of-animation-span: 0.3s;
 }
 
 body {
@@ -54,34 +54,34 @@ body {
 
 
 .bienvenue {
-    text-align: center;
+    text-align: start;
     width: fit-content;
     clip-path: border-box;
     position: absolute;
     top: 50%;
-    left: 30%;
-    opacity: 0;
-    transform: translateY(-50%);
+    left: 50%;
+    opacity:0;
+    transform: translate(-50%,-50%);
+   }
+
+
+.bienvenueAnimation{
     -webkit-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
     -o-animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
     animation: bienvenue var(--bienvenu-text-time) var(--bienvenu-text-time-latence) linear !important;
-}
 
+}
 @keyframes bienvenue {
     0% {
-        width: 0;
         opacity: 1;
     }
-    40% {
-        width: 50%;
-    }
+
     70% {
 
         opacity: 1;
     }
     100% {
         opacity: 0;
-        display: none;
     }
 }
 
@@ -100,11 +100,13 @@ body {
     position: absolute;
     top: 38%;
 
+}
+.section1 .animationsToTitles{
+
     -webkit-animation: titles var(--text-appear-time) linear;
     -o-animation: titles var(--text-appear-time) linear;
     animation: titles var(--text-appear-time) linear;
 }
-
 .section1 h1 {
     text-align: center;
 }
@@ -147,11 +149,14 @@ body {
 
     filter: drop-shadow(-4px 0px 32px rgba(0, 0, 0, 0.025)) drop-shadow(4px 0px 32px rgba(0, 0, 0, 0.040));
 
+}
+
+.section1 .columnsAnimations{
+
     -webkit-animation: columns var(--columns-animation) linear;
     -o-animation: columns var(--columns-animation) linear;
     animation: columns var(--columns-animation) linear;
 }
-
 .section1 .columns .column {
     height: 100%;
     width: 15%;
@@ -180,16 +185,18 @@ body {
     height: 37px;
     z-index: 5;
 
-    -webkit-animation: linkOpacity var(--link-text-appear) linear;
-    -o-animation: linkOpacity var(--link-text-appear) linear;
-    animation: linkOpacity var(--link-text-appear) linear;
 
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+.linkTextAppearAnimation{
+    -webkit-animation: linkOpacity var(--link-text-appear) linear;
+    -o-animation: linkOpacity var(--link-text-appear) linear;
+    animation: linkOpacity var(--link-text-appear) linear;
 
-.section1 .columns .column .animatedSpan {
+}
+.animatedSpan {
     clip-path: border-box;
     display: flex;
     flex-direction: column;
@@ -197,21 +204,21 @@ body {
     cursor: pointer;
 }
 
-.section1 .columns .column .animatedSpan > div {
+.animatedSpan > div {
     transform: translateY(-13px);
     transition: transform var(--speed-of-animation-span) linear;
     will-change: transfor
 }
 
 
-.section1 .columns .column .animatedSpan span {
+.animatedSpan span {
     display: flex;
     line-height: 16px;
 
 
 }
 
-.section1 .columns .column .animatedSpan span {
+.animatedSpan span {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -223,14 +230,17 @@ body {
     flex-direction: column;
     align-items: start;
     align-self: start;
-
+cursor: pointer;
     z-index: 5;
+
+}
+
+.section1 .columns .column .logoAnimation{
 
     -webkit-animation: linkOpacity var(--link-text-appear) linear;
     -o-animation: linkOpacity var(--link-text-appear) linear;
     animation: linkOpacity var(--link-text-appear) linear;
 }
-
 .section1 .columns .column .mailAndLinkedin {
 
     display: flex;
@@ -242,11 +252,14 @@ body {
     cursor: pointer;
 
     z-index: 5;
+}
+
+.section1 .columns .column .mailAndLinkedinAnimation{
+
     -webkit-animation: linkOpacity var(--link-text-appear) linear;
     -o-animation: linkOpacity var(--link-text-appear) linear;
     animation: linkOpacity var(--link-text-appear) linear;
 }
-
 .section1 .columns .column .mailAndLinkedin div {
     display: flex;
     flex-direction: column;
