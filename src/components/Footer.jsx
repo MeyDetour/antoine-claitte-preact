@@ -25,7 +25,7 @@ export default function Footer(){
                 <div>
                     <div className="data">
                         <span>[@]</span>
-                        <span>contact@antoineclaitte.com</span>
+                        <a href={"mailto:contact@antoineclaitte.com"}>contact <span className={"arobase"}>@</span>antoineclaitte.com</a>
                     </div>
                     <div className="data">
                         <span>[RS]</span>

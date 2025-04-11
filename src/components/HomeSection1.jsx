@@ -1,6 +1,7 @@
 import '../assets/css/home.css'
 import {scrollToDiv} from "../index.jsx";
 import "../assets/css/oneProject.css"
+import { motion } from 'framer-motion';
 
 export default function HomeSection1() {
 
@@ -45,14 +46,15 @@ export default function HomeSection1() {
                             </a></div>
                         <div>
                             <span>[@]</span>
-                            <div className="animatedSpan">
+                            <a href={"mailto:contact@antoineclaitte.com"} className="animatedSpan">
                                 <div>
-                                    <span>contact@antoineclaitte.com</span>
-                                    <span>contact@antoineclaitte.com</span>
-                                    <span>contact@antoineclaitte.com</span>
+                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+
                                 </div>
 
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -114,7 +116,12 @@ export default function HomeSection1() {
             </div>
 
 
-            <h1 class="bienvenue">Bienvenue</h1>
+            <motion.h1
+                style={{overflow: "hidden", whiteSpace: "nowrap"}}
+                initial={{width: 0}}
+                animate={{width: "100%"}}
+                transition={{duration: 5.5, ease: "easeInOut"}}
+                class="bienvenue">Bienvenue</motion.h1>
         </div>
 
 
