@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "camptonBook";
-    src: url("../src/assets/campton/CamptonBook.otf") format("opentype");
+    src: url("/campton/CamptonBook.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -114,6 +114,18 @@ a {
     align-items: baseline;
 }
 
+.blackButton svg {
+    transform: rotate(45deg) translateY(4px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.blackButton:hover svg {
+    transform: rotate(0deg) translateY(2px);
+}
+
+.arobase {
+    line-height: 11px !important;
+}
 
 @media only screen and (max-width: 1250px) {
     h1 {
