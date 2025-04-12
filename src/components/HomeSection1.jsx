@@ -30,9 +30,12 @@ export default function HomeSection1() {
                     localStorage.removeItem("animation");
                 }
             });
-            loadHomeAnimation();
-            loadLinkAnimatins();
+            if (!isReload){
+                loadHomeAnimation();
+                loadLinkAnimatins();
 
+
+            }
 
 
             window.addEventListener("pageshow", (event) => {
