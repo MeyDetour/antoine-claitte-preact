@@ -1,14 +1,16 @@
 let animation = true
-// Au tout début du fichier
-if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-    sessionStorage.setItem("isReload", "true");
+const navEntries = performance.getEntriesByType("navigation");
+const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
+
+if (isReload) {
+    localStorage.setItem("isReload", "true");
 } else {
-    sessionStorage.removeItem("isReload");
+    localStorage.removeItem("isReload");
 }
 
 // Ensuite à la fin :
 window.addEventListener("unload", () => {
-    const isReload = sessionStorage.getItem("isReload") === "true";
+    const isReload = localStorage.getItem("isReload") === "true";
     if (!isReload) {
         localStorage.removeItem("animation");
     }
