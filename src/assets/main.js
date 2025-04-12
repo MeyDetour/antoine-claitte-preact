@@ -1,13 +1,5 @@
 let animation = true
-const navEntries = performance.getEntriesByType("navigation");
-const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
 
-if (isReload) {
-    sessionStorage.setItem("isReload", "true");
-} else {
-    sessionStorage.removeItem("isReload");
-}
-window.addEventListener("re")
 
 // Ensuite à la fin :
 window.addEventListener("unload", () => {
@@ -19,6 +11,15 @@ window.addEventListener("unload", () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    const navEntries = performance.getEntriesByType("navigation");
+    const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
+
+    if (isReload) {
+        sessionStorage.setItem("isReload", "true");
+    } else {
+        sessionStorage.removeItem("isReload");
+    }
 
     loadHomeAnimation()
 
