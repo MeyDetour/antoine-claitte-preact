@@ -6,9 +6,7 @@ export default function Footer(){
         <div className="footer">
             <div className="top">
                 <h2>Travaillons ensemble</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid at eligendi enim et hic id iste
-                    laborum
-                    maxime minus modi nemo nihil, odio velit!</p>
+                <p>Besoin d’un design clair, efficace et impactant ? Je vous accompagne en adaptant chaque création à votre identité et à vos besoins spécifiques. Discutons de votre projet et trouvons ensemble la meilleure approche pour le concrétiser.</p>
 
             </div>
             <div className="bottom">
