@@ -1,7 +1,7 @@
 import '../assets/css/home.css'
 import {scrollToDiv} from "../index.jsx";
 import "../assets/css/oneProject.css"
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import {useEffect} from "react";
 import {loadHomeAnimation, loadLinkAnimatins} from "../assets/main.js";
 
@@ -13,36 +13,9 @@ export default function HomeSection1() {
         if (location.pathname === '/') {
 
 
-            const navEntries = performance.getEntriesByType("navigation");
-            const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
-
-            if (isReload) {
-                sessionStorage.setItem("isReload", "true");
-            } else {
-                sessionStorage.removeItem("isReload");
-            }
-
-
-// Ensuite à la fin :
-            window.addEventListener("pagehide", () => {
-                const isReload = sessionStorage.getItem("isReload") === "true";
-                if (!isReload) {
-                    localStorage.removeItem("animation");
-                }
-            });
-            if (!isReload){
                 loadHomeAnimation();
                 loadLinkAnimatins();
 
-
-            }
-
-
-            window.addEventListener("pageshow", () => {
-                if (!isReload) {
-                    loadHomeAnimation()
-                }
-            });
         }
     }, []);
 
@@ -51,26 +24,26 @@ export default function HomeSection1() {
         <div className="section1">
             <div className="navbarResponsive">
 
-                    <div className="link" onClick={() => {
-                        scrollToDiv('.section2')
-                    }}><span>[01]</span>
-                            <span>A propos</span>
-                    </div>
+                <div className="link" onClick={() => {
+                    scrollToDiv('.section2')
+                }}><span>[01]</span>
+                    <span>A propos</span>
+                </div>
 
                 <div className="link" onClick={() => {
                     scrollToDiv('.section4')
                 }}><span>[02]</span>
-                        <span>Projets</span>
+                    <span>Projets</span>
                 </div>
-                <div className="link"  onClick={() => {
+                <div className="link" onClick={() => {
                     scrollToDiv('.footer')
                 }}><span>[03]</span>
-                        <span>Contact</span>
+                    <span>Contact</span>
                 </div>
 
             </div>
             <div className="columns">
-            <div className="whiteBlur1"/>
+                <div className="whiteBlur1"/>
                 <div className="column">
                     <div className="logo"><span>Antoine Claitte</span></div>
                     <div className="mailAndLinkedin">
@@ -78,20 +51,20 @@ export default function HomeSection1() {
                             <span>[RS]</span>
                             <a href="https://www.linkedin.com/in/antoine-claitte-a14a06245/" target="_blank"
                                class="animatedSpan" rel="noreferrer">
-                             <div>
-                                 <span>LinkedIn</span>
-                                 <span>LinkedIn</span>
-                                 <span>LinkedIn</span>
-                             </div>
+                                <div>
+                                    <span>LinkedIn</span>
+                                    <span>LinkedIn</span>
+                                    <span>LinkedIn</span>
+                                </div>
 
                             </a></div>
                         <div>
                             <span>[@]</span>
                             <a href={"mailto:contact@antoineclaitte.com"} className="animatedSpan">
                                 <div>
-                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
-                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
-                                   <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+                                    <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+                                    <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
+                                    <span>contact <span className={"arobase"}>@</span>antoineclaitte.com</span>
 
                                 </div>
 
@@ -130,15 +103,15 @@ export default function HomeSection1() {
                     </div>
                 </div>
                 <div className="column">
-                    <div className="link"  onClick={() => {
+                    <div className="link" onClick={() => {
                         scrollToDiv('.footer')
                     }}><span>[03]</span>
                         <div className="animatedSpan">
-                           <div>
-                               <span>Contact</span>
-                               <span>Contact</span>
-                               <span>Contact</span>
-                           </div>
+                            <div>
+                                <span>Contact</span>
+                                <span>Contact</span>
+                                <span>Contact</span>
+                            </div>
 
                         </div>
                     </div>
@@ -147,10 +120,10 @@ export default function HomeSection1() {
                 <div className="whiteBlur2"/>
             </div>
 
-            <div className="elipse1" />
-            <div className="elipse2" />
-            <div className="elipse3" />
-            <div className="elipse4" />
+            <div className="elipse1"/>
+            <div className="elipse2"/>
+            <div className="elipse3"/>
+            <div className="elipse4"/>
             <div className="titles">
                 <h1>Antoine Claitte</h1>
                 <h2>Web Designer</h2>
@@ -162,7 +135,8 @@ export default function HomeSection1() {
                 initial={{width: 0}}
                 animate={{width: "100%"}}
                 transition={{duration: 5.5, ease: "easeInOut"}}
-                class="bienvenue">Bienvenue</motion.h1>
+                class="bienvenue">Bienvenue
+            </motion.h1>
         </div>
 
 

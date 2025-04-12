@@ -66,7 +66,14 @@ export function loadHomeAnimation() {
             setTimeout(() => {
                 apprear();
                 animation = false
-                localStorage.setItem("animation", true)
+                const now = new Date();
+                const expires = new Date(now.getTime() + 60 * 60 * 1000);
+
+                localStorage.setItem("animation", JSON.stringify({
+                    value: true,
+                    expires: expires.toISOString()
+                }));
+
             }, 8000)
 
         } else {
