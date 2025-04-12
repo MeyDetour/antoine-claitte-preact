@@ -1,15 +1,6 @@
 let animation = true
 
 
-// Ensuite à la fin :
-window.addEventListener("unload", () => {
-    const isReload = sessionStorage.getItem("isReload") === "true";
-    if (!isReload) {
-        localStorage.removeItem("animation");
-    }
-});
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const navEntries = performance.getEntriesByType("navigation");
@@ -21,6 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
         sessionStorage.removeItem("isReload");
     }
 
+
+// Ensuite à la fin :
+    window.addEventListener("unload", () => {
+        const isReload = sessionStorage.getItem("isReload") === "true";
+        if (!isReload) {
+            localStorage.removeItem("animation");
+        }
+    });
     loadHomeAnimation()
 
     loadLinkAnimatins()
