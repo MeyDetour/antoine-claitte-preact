@@ -1,37 +1,5 @@
 let animation = true
 
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const navEntries = performance.getEntriesByType("navigation");
-    const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
-
-    if (isReload) {
-        sessionStorage.setItem("isReload", "true");
-    } else {
-        sessionStorage.removeItem("isReload");
-    }
-
-
-// Ensuite à la fin :
-    window.addEventListener("unload", () => {
-        const isReload = sessionStorage.getItem("isReload") === "true";
-        if (!isReload) {
-            localStorage.removeItem("animation");
-        }
-    });
-    loadHomeAnimation()
-
-    loadLinkAnimatins()
-
-    window.addEventListener("pageshow", (event) => {
-        console.log("page show")
-        if (event.persisted) {
-            location.reload();
-        }
-    });
-
-})
 export function loadHomeAnimation() {
     console.log(animation)
     let section2 = document.querySelector(".section2")
