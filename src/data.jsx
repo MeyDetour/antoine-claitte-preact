@@ -5,7 +5,7 @@ export default function projectData() {
         {
             uniqueName: "MaisonLaborde",
             title: "Maison Laborde",
-            image: `${baseLink}/laborde/image1.png`,
+            image: `${baseLink}/laborde/image2.png`,
             description: "Réalisation de la maquette Figma prototypée pour “Maison Laborde”, architecte d’intérieur",
             link: "https://www.maison-laborde.fr/",
             images: [
