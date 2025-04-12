@@ -12,6 +12,7 @@ export default function ProjectsSection() {
                 {projects.map((item, i) => (
                     <a href={`/project/${item.uniqueName}`} key={i}>
                         <img key={i} src={item.image}  alt={item.title} />
+                        <div className={"elispe"} />
                     </a>
                 ))}
             </div>
