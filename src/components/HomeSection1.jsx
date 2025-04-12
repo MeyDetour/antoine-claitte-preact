@@ -39,8 +39,7 @@ export default function HomeSection1() {
 
 
             window.addEventListener("pageshow", () => {
-                console.log("page show")
-                    location.reload();
+                loadHomeAnimation()
 
             });
         }
