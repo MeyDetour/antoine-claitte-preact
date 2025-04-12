@@ -4,8 +4,7 @@ export default  function Webdesign()
     return (
         <div className="section3">
             <h2>Webdesign</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum laborum magni officiis.
-                Lorem ipsum dolor sit amet,
+            <p>Concevons ensemble un site clair, intuitif et adapté à vos besoins pour offrir la meilleure expérience à vos utilisateurs.
             </p>
             <div className="line">
                 <div className="column">
@@ -15,9 +14,7 @@ export default  function Webdesign()
                         <div className="elipse" />
                     </div>
                     <div className="bodyContent1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolores est praesentium quia
-                            tempora
-                            tempore.</p>
+                        <p>Analyse de votre site actuel pour identifier ses points forts et axes d’amélioration, afin d’optimiser son design et son ergonomie.</p>
                     </div>
                 </div>
                 <div className="column">
@@ -27,9 +24,7 @@ export default  function Webdesign()
                         <div className="elipse" />
                     </div>
                     <div className="bodyContent2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam incidunt labore, laudantium
-                            maxime
-                            nobis rem.</p>
+                        <p>Élaboration de la structure et du design du site, en alliant clarté, esthétisme et fluidité pour une expérience utilisateur optimale.</p>
                     </div>
                 </div>
                 <div className="column">
@@ -41,9 +36,7 @@ export default  function Webdesign()
 
 
                     <div className="bodyContent3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dicta eum maxime quasi
-                            recusandae
-                            sit?</p>
+                        <p>Finalisation du design avec les derniers ajustements, puis présentation détaillée pour garantir une mise en ligne efficace et sans surprises.</p>
                     </div>
                 </div>
 
