@@ -116,7 +116,7 @@ a {
 
 .blackButton svg {
     transform: rotate(45deg) translateY(4px);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .blackButton:hover svg {
