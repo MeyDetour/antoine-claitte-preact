@@ -18,7 +18,6 @@ export function Project({name}) {
             <NotFound />
         )
     }
-    console.log(project);
 
     function navigateToHome(){
         window.location.href = "/";
