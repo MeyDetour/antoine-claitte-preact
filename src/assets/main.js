@@ -11,7 +11,7 @@ export function loadHomeAnimation() {
     let footer = document.querySelector(".footer")
     let body = document.querySelector("body")
 
-    const animationIsPassed = localStorage.getItem("animation") === "true"
+    const animationIsPassed = sessionStorage.getItem("animation") === "true"
     console.log(animationIsPassed)
     console.log(typeof animationIsPassed)
     console.log(animation && !animationIsPassed)
@@ -69,7 +69,7 @@ export function loadHomeAnimation() {
                 const now = new Date();
                 const expires = new Date(now.getTime() + 60 * 60 * 1000);
 
-                localStorage.setItem("animation", JSON.stringify({
+                sessionStorage.setItem("animation", JSON.stringify({
                     value: true,
                     expires: expires.toISOString()
                 }));
