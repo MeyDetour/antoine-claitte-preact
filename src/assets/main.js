@@ -3,14 +3,15 @@ const navEntries = performance.getEntriesByType("navigation");
 const isReload = navEntries.length > 0 && navEntries[0].type === "reload";
 
 if (isReload) {
-    localStorage.setItem("isReload", "true");
+    sessionStorage.setItem("isReload", "true");
 } else {
-    localStorage.removeItem("isReload");
+    sessionStorage.removeItem("isReload");
 }
+window.addEventListener("re")
 
 // Ensuite à la fin :
 window.addEventListener("unload", () => {
-    const isReload = localStorage.getItem("isReload") === "true";
+    const isReload = sessionStorage.getItem("isReload") === "true";
     if (!isReload) {
         localStorage.removeItem("animation");
     }
