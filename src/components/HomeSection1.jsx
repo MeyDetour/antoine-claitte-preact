@@ -24,7 +24,7 @@ export default function HomeSection1() {
 
 
 // Ensuite à la fin :
-            window.addEventListener("unload", () => {
+            window.addEventListener("pagehide", () => {
                 const isReload = sessionStorage.getItem("isReload") === "true";
                 if (!isReload) {
                     localStorage.removeItem("animation");
