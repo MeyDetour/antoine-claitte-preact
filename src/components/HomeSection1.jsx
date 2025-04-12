@@ -38,11 +38,10 @@ export default function HomeSection1() {
             }
 
 
-            window.addEventListener("pageshow", (event) => {
+            window.addEventListener("pageshow", () => {
                 console.log("page show")
-                if (event.persisted) {
                     location.reload();
-                }
+
             });
         }
     }, []);
