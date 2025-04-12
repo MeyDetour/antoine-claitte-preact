@@ -10,8 +10,24 @@ export function loadHomeAnimation() {
     let navbarBurger = document.querySelector(".navbarResponsive")
     let footer = document.querySelector(".footer")
     let body = document.querySelector("body")
+    const animationData = sessionStorage.getItem("animation");
+    let animationIsPassed = false;
 
-    const animationIsPassed = sessionStorage.getItem("animation") === "true"
+    if (animationData) {
+        try {
+            const parsed = JSON.parse(animationData);
+            const now = new Date();
+
+            if (parsed.expires && new Date(parsed.expires) > now) {
+                animationIsPassed = parsed.value === true;
+            } else {
+                sessionStorage.removeItem("animation");
+            }
+        } catch (e) {
+            sessionStorage.removeItem("animation");
+        }
+    }
+
     console.log(animationIsPassed)
     console.log(typeof animationIsPassed)
     console.log(animation && !animationIsPassed)
@@ -68,6 +84,7 @@ export function loadHomeAnimation() {
                 animation = false
                 const now = new Date();
                 const expires = new Date(now.getTime() + 60 * 60 * 1000);
+
 
                 sessionStorage.setItem("animation", JSON.stringify({
                     value: true,
