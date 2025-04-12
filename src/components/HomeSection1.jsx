@@ -2,8 +2,17 @@ import '../assets/css/home.css'
 import {scrollToDiv} from "../index.jsx";
 import "../assets/css/oneProject.css"
 import { motion } from 'framer-motion';
+import {useEffect} from "react";
+import {loadHomeAnimation, loadLinkAnimatins} from "../assets/main.js";
 
 export default function HomeSection1() {
+    useEffect(() => {
+        // On vérifie qu'on est bien sur la homepage
+        if (location.pathname === '/') {
+            loadHomeAnimation();
+            loadLinkAnimatins();
+        }
+    }, []);
 
 
     return (
