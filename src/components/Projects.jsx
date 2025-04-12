@@ -5,7 +5,6 @@ export default function ProjectsSection() {
 
     console.log("load section 4")
     let projects = projectData()
-    console.log(projects);
     return (
         <div className="section4">
             <h2>MES PROJETS</h2>
