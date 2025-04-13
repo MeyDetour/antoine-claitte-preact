@@ -427,10 +427,6 @@ cursor: pointer;
         font-size: 55px;
     }
 
-    .bienvenue {
-
-        left: 24%;
-    }
 
     .section1 {
         margin-bottom: 21%;
@@ -446,16 +442,11 @@ cursor: pointer;
         font-size: 44px;
     }
 
-    .bienvenue {
-        left: 28%;
-    }
 }
 
 
 @media only screen and (max-width: 640px) {
-    .bienvenue {
-        left: 24%;
-    }
+
 }
 
 @media only screen and (max-width: 570px) {
@@ -481,9 +472,6 @@ cursor: pointer;
         width: 203%;
     }
 
-    .bienvenue {
-        left: 20%;
-    }
 
     .section1 h2 {
         font-size: 34px;
@@ -491,21 +479,15 @@ cursor: pointer;
 }
 
 @media only screen and (max-width: 450px) {
-    .bienvenue {
-        left: 14%;
-    }
+
 }
 
 @media only screen and (max-width: 400px) {
-    .bienvenue {
-        left: 11%;
-    }
+
 }
 
 @media only screen and (max-width: 350px) {
-    .bienvenue {
-        left: 8%;
-    }
+
 
     .navbarResponsive {
 
