@@ -25,8 +25,13 @@
     border-radius: 10px;
     width: 21%;
     position: relative;
+    transition: transform 0.5s linear;
 }
 
+
+.section4 .imgContainer  a:hover{
+    transform: scale(1.03) ;
+}
 
 .section4 .imgContainer  img{
     width: 100%;
