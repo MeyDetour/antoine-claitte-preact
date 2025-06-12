@@ -88,7 +88,7 @@ export function Mentionslegales() {
 
 					<p>Délégué à la protection des données : Antoine - contact@antoineclaitte.com</p>
 
-					<p>Autres contributeurs : Mey DETOUR</p>
+					<p>Webmastr : GENOS CENTER by Mey Detour – contact@md-genos.com - 07 56 91 98 17 - www.genos-center.com <br/></p>
 				</div>
 
 				<div>
