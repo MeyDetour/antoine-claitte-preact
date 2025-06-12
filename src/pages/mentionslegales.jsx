@@ -86,7 +86,7 @@ export function Mentionslegales() {
 
 					<p>Hébergeur : AutreLinode 249 Arch Street, Philadelphia, PA 19106, USA +33-156697240</p>
 
-					<p>Délégué à la protection des données : Antoine - contact@antoineclaitte.com</p>
+					<p>Délégué à la protection des données : Antoine Claitte - contact@antoineclaitte.com</p>
 
 					<p>Webmastr : GENOS CENTER by Mey Detour – contact@md-genos.com - 07 56 91 98 17 - www.genos-center.com <br/></p>
 				</div>
