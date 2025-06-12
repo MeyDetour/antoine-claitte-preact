@@ -115,8 +115,7 @@ export function Mentionslegales() {
 					<h3>4. CNIL et gestion des données personnelles.</h3>
 					<p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur du site https://antoineclaitte.com dispose d’un droit d’accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Antoine Claitte - contact@antoineclaitte.com.</p>
 
-					<p>Pour plus d'informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre https://antoineclaitte.com/politique-de-confidentialite. [Consignes : ajoutez ici le lien hypertexte vers votre politique de confidentialité]</p>
-				</div>
+				 	</div>
 				<div>
 					<h3>6. Droit applicable et attribution de juridiction.</h3>
 					<p>Tout litige en relation avec l’utilisation du site https://antoineclaitte.com est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Miribel.</p>
