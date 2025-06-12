@@ -77,7 +77,7 @@ export function Mentionslegales() {
 				<h2>Mentions Légales :</h2>
 				<div>
 					<h3>1. Édition du site</h3>
-					<p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet http://antoineclaitte.com l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:</p>
+					<p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://antoineclaitte.com l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:</p>
 <p>Propriétaire du site : Claitte Antoine - Contact : contact@antoineclaitte.com 0651484225 - Adresse : 101 Chemin de Ronde.</p>
 
 					<p>Identification de l'entreprise : Claitte Antoine au capital social de € - SIREN : - RCS ou RM : - Adresse postale : 101 Chemin de Ronde -</p>
@@ -101,11 +101,11 @@ export function Mentionslegales() {
 				</div>
 				<div>
 					<h3>3. Limitations de responsabilité.</h3>
-					<p>Claitte Antoine ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site http://antoineclaitte.com.</p>
+					<p>Claitte Antoine ne pourra être tenu pour responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site https://antoineclaitte.com.</p>
 
-					<p>Claitte Antoine décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur http://antoineclaitte.com.</p>
+					<p>Claitte Antoine décline toute responsabilité quant à l’utilisation qui pourrait être faite des informations et contenus présents sur https://antoineclaitte.com.</p>
 
-					<p>Claitte Antoine s’engage à sécuriser au mieux le site http://antoineclaitte.com, cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur son site à son insu.</p>
+					<p>Claitte Antoine s’engage à sécuriser au mieux le site https://antoineclaitte.com, cependant sa responsabilité ne pourra être mise en cause si des données indésirables sont importées et installées sur son site à son insu.</p>
 
 					<p>Des espaces interactifs (espace contact ou commentaires) sont à la disposition des utilisateurs. Claitte Antoine se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données.</p>
 
@@ -113,13 +113,13 @@ export function Mentionslegales() {
 				</div>
 				<div>
 					<h3>4. CNIL et gestion des données personnelles.</h3>
-					<p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur du site http://antoineclaitte.com dispose d’un droit d’accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Antoine - contact@antoineclaitte.com.</p>
+					<p>Conformément aux dispositions de la loi 78-17 du 6 janvier 1978 modifiée, l’utilisateur du site https://antoineclaitte.com dispose d’un droit d’accès, de modification et de suppression des informations collectées. Pour exercer ce droit, envoyez un message à notre Délégué à la Protection des Données : Antoine - contact@antoineclaitte.com.</p>
 
 					<p>Pour plus d'informations sur la façon dont nous traitons vos données (type de données, finalité, destinataire...), lisez notre https://antoineclaitte.com/politique-de-confidentialite. [Consignes : ajoutez ici le lien hypertexte vers votre politique de confidentialité]</p>
 				</div>
 				<div>
 					<h3>6. Droit applicable et attribution de juridiction.</h3>
-					<p>Tout litige en relation avec l’utilisation du site http://antoineclaitte.com est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Miribel.</p>
+					<p>Tout litige en relation avec l’utilisation du site https://antoineclaitte.com est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de Miribel.</p>
 				</div>
 
 
