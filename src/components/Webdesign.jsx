@@ -30,7 +30,7 @@ export default  function Webdesign()
                 <div className="column">
                     <div className="head3">
                         <h3>111</h3>
-                        <h4>Rendu fianl & Présentation</h4>
+                        <h4>Rendu final & Présentation</h4>
                         <div className="elipse" />
                     </div>
 
