@@ -140,6 +140,8 @@
 
     .footer .bottom > div:first-child,     .footer .bottom > div:last-child {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer .bottom > div:last-child  .data{
